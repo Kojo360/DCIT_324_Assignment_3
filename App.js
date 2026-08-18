@@ -10,12 +10,12 @@ const Tabs = createBottomTabNavigator();
 const C = { orange: '#FF704F', ink: '#111111', muted: '#777477', line: '#E9E4E2', bg: '#FFFFFF', pink: '#FFE0E2', green: '#D6F7D5', lilac: '#E9E7FF', yellow: '#FFF6BE' };
 const image = id => ({ uri: `https://images.unsplash.com/${id}?auto=format&fit=crop&w=500&q=80` });
 const PRODUCTS = [
-  { id: '1', name: 'Apple AirPods Pro (2nd Gen)', category: 'Electronics', price: 229.99, rating: 4.9, color: C.lilac, image: image('photo-1603351154351-5e2d0600bb77') },
-  { id: '2', name: 'Polarized Aviator Sunglasses', category: 'Fashion', price: 34.99, rating: 4.6, color: C.yellow, image: image('photo-1511499767150-a48a237f0083') },
-  { id: '3', name: 'Mechanical Gaming Keyboard', category: 'Electronics', price: 89.99, rating: 4.8, color: C.green, image: image('photo-1587829741301-dc798b83add3') },
-  { id: '4', name: 'Men\'s Slim Fit Chino Pants', category: 'Fashion', price: 42.99, rating: 4.5, color: C.pink, image: image('photo-1541099649105-f69ad21f3246') },
-  { id: '5', name: 'Stainless Steel Water Bottle', category: 'Lifestyle', price: 19.99, rating: 4.7, color: C.yellow, image: image('photo-1602143407151-7111542de6e8') },
-  { id: '6', name: 'Portable Laptop Stand', category: 'Electronics', price: 55.99, rating: 4.8, color: C.lilac, image: image('photo-1593642632559-0c6d3fc62b89') },
+  { id: '1', name: 'Luxury Rose Gold Handbag', category: 'Fashion', price: 64.99, rating: 4.9, color: C.pink, image: image('photo-1548036328-c9fa89d128fa') },
+  { id: '2', name: 'Women\'s Floral Maxi Dress', category: 'Fashion', price: 38.99, rating: 4.7, color: C.lilac, image: image('photo-1515372039744-b8f02a3ae446') },
+  { id: '3', name: 'Chanel No.5 Eau de Parfum', category: 'Beauty', price: 89.99, rating: 4.9, color: C.yellow, image: image('photo-1541643600914-78b084683702') },
+  { id: '4', name: 'Gold Hoop Earrings Set', category: 'Jewellery', price: 22.99, rating: 4.8, color: C.yellow, image: image('photo-1535632066927-ab7c9ab60908') },
+  { id: '5', name: 'Glossy Lip Gloss Collection', category: 'Beauty', price: 14.99, rating: 4.6, color: C.pink, image: image('photo-1586495777744-4e6232bf2ebb') },
+  { id: '6', name: 'Women\'s White Sneakers', category: 'Fashion', price: 49.99, rating: 4.8, color: C.green, image: image('photo-1525966222134-fcfa99b8ae77') },
 ];
 
 function ProductCard({ image, name, price, rating, color, onPress }) {
@@ -62,14 +62,14 @@ function ProfileScreen() {
     <View style={styles.screen}>
       <View style={styles.profile}>
         <Ionicons name="person-circle-outline" size={90} color={C.orange} />
-        <Text style={styles.heading}>Saviour Aryeevor</Text>
-        <Text style={[styles.description, { color: C.orange, fontWeight: '700', fontSize: 14, marginBottom: 4 }]}>Galaxy Shop Member</Text>
-        <Text style={styles.description}>saviour.aryeevor@galaxyshop.com</Text>
-        <View style={{ marginTop: 24, width: '100%', backgroundColor: C.green, borderRadius: 10, padding: 16 }}>
+        <Text style={styles.heading}>Lynna Kwapong</Text>
+        <Text style={[styles.description, { color: C.orange, fontWeight: '700', fontSize: 14, marginBottom: 4 }]}>Galaxy Shop Member ✨</Text>
+        <Text style={styles.description}>lynna.kwapong@galaxyshop.com</Text>
+        <View style={{ marginTop: 24, width: '100%', backgroundColor: C.pink, borderRadius: 10, padding: 16 }}>
           <Text style={{ fontWeight: '800', marginBottom: 4 }}>Account Details</Text>
-          <Text style={styles.description}>📦 Orders: 12</Text>
-          <Text style={styles.description}>❤️ Wishlist: 5 items</Text>
-          <Text style={styles.description}>⭐ Loyalty Points: 340</Text>
+          <Text style={styles.description}>📦 Orders: 18</Text>
+          <Text style={styles.description}>💖 Wishlist: 9 items</Text>
+          <Text style={styles.description}>💎 Loyalty Points: 520</Text>
         </View>
       </View>
     </View>
